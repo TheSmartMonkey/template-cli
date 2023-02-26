@@ -5,9 +5,6 @@ import { slsExpressPrompts } from './prompts.mjs';
 export function slsExpressGenerator(plop) {
   plop.setGenerator(generators.slsExpress, {
     prompts: slsExpressPrompts(),
-    actions: (data) => {
-      console.log(data.action);
-      return slsExpressActions();
-    },
+    actions: (data) => slsExpressActions(data),
   });
 }
