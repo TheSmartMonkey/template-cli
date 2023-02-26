@@ -1,3 +1,4 @@
 export const generators = {
-  slsExpress: 'create-serverless-express-ts-service'
-} 
+  plop: 'create-plop-generator',
+  slsExpress: 'create-serverless-express-ts-service',
+};
