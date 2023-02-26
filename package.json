@@ -1,0 +1,22 @@
+{
+  "name": "template-cli",
+  "version": "1.0.0",
+  "description": "Personnal CLI to generate templates for my projects with plop.js",
+  "main": "plopfile.mjs",
+  "scripts": {
+    "plop": "plop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSmartMonkey/template-cli.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheSmartMonkey/template-cli/issues"
+  },
+  "homepage": "https://github.com/TheSmartMonkey/template-cli#readme",
+  "devDependencies": {
+    "plop": "^3.1.2"
+  }
+}
