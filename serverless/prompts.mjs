@@ -16,5 +16,21 @@ export function serverlessPrompts() {
       name: 'name',
       message: 'Choose a lambda function name',
     },
+    {
+      when(context) {
+        return context.template.includes(serverlessTempates.handlerTest);
+      },
+      type: 'input',
+      name: 'name',
+      message: 'Choose test file name',
+    },
+    {
+      when(context) {
+        return context.template.includes(serverlessTempates.handlerIntegrationTest);
+      },
+      type: 'input',
+      name: 'name',
+      message: 'Choose integration test file name',
+    },
   ];
 }
