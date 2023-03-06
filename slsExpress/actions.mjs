@@ -1,3 +1,4 @@
+import { toKebabCase } from '../helpers.mjs';
 import { slsExpressTempates } from './templates.mjs';
 
 export function slsExpressActions(data) {
@@ -10,7 +11,7 @@ function lambdaFunctionApiEndpoint(data) {
     return [
       {
         type: 'addMany',
-        destination: 'src/functions/{{name}}',
+        destination: `src/functions/${toKebabCase(data.name)}`,
         base: `slsExpress/templates/${slsExpressTempates.endpoint}/`,
         templateFiles: `slsExpress/templates/${slsExpressTempates.endpoint}/**/*`,
       },

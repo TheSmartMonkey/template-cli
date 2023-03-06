@@ -14,7 +14,7 @@ export function slsExpressPrompts() {
       },
       type: 'input',
       name: 'name',
-      message: 'Choose a lambda function name',
+      message: 'Choose a lambda function name (in camelcase)',
     },
   ];
 }
